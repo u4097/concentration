@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7CB6495E23BB1EF70017EB73 /* concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB6495E23BB1EF70017EB73 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB6496123BB1EF70017EB73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB6496323BB1EF70017EB73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7CB6496523BB1EF70017EB73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		7CB6495F23BB1EF70017EB73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CB6495E23BB1EF70017EB73 /* concentration.app */,
+				7CB6495E23BB1EF70017EB73 /* Concentration.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +56,23 @@
 		7CB6496023BB1EF70017EB73 /* concentration */ = {
 			isa = PBXGroup;
 			children = (
-				7CB6496123BB1EF70017EB73 /* AppDelegate.swift */,
-				7CB6496323BB1EF70017EB73 /* SceneDelegate.swift */,
 				7CB6496523BB1EF70017EB73 /* ViewController.swift */,
 				7CB6496723BB1EF70017EB73 /* Main.storyboard */,
-				7CB6496A23BB1EFB0017EB73 /* Assets.xcassets */,
-				7CB6496C23BB1EFB0017EB73 /* LaunchScreen.storyboard */,
+				7CB6497523BB242A0017EB73 /* Supporting Files */,
 				7CB6496F23BB1EFB0017EB73 /* Info.plist */,
 			);
 			path = concentration;
+			sourceTree = "<group>";
+		};
+		7CB6497523BB242A0017EB73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CB6496123BB1EF70017EB73 /* AppDelegate.swift */,
+				7CB6496323BB1EF70017EB73 /* SceneDelegate.swift */,
+				7CB6496A23BB1EFB0017EB73 /* Assets.xcassets */,
+				7CB6496C23BB1EFB0017EB73 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +92,7 @@
 			);
 			name = concentration;
 			productName = concentration;
-			productReference = 7CB6495E23BB1EF70017EB73 /* concentration.app */;
+			productReference = 7CB6495E23BB1EF70017EB73 /* Concentration.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,9 +300,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = development.olegstv.concentration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Concentration;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,9 +318,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = development.olegstv.concentration;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Concentration;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

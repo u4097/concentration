@@ -9,8 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+    
+    lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
+    
+    var numberOfPairsOfCards: Int {
+        get {
+            return (cardButtons.count + 1) / 2
+        }
+    }
     
     var flipCount = 0 {
         didSet {
@@ -19,10 +25,10 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var flipCountlabel: UILabel!
-
-   
+    
+    
     @IBOutlet var cardButtons: [UIButton]!
-      
+    
     var emojiChoices = ["🎃", "🐉", "🧚‍♀️", "🦞", "🌲", "🍄", "🍏", "🧬", "💈", "🎁", "🧸", "🧪", "🖼", "💊", "🔮", "🔭", "🧿", "🧹", "🛌", "🪑", "🚪"]
     
     var emoji = [Int: String]()
@@ -68,7 +74,7 @@ class ViewController: UIViewController {
             button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
         } else {
             button.setTitle(emoji, for: UIControl.State.normal)
-                       button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         } 
     }
 }
